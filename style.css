@@ -1,0 +1,326 @@
+nav.figma{
+    display: none;
+  
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+nav{
+    margin-top: 20px;
+}
+.header a{
+text-decoration: none;
+padding: 0 10px;
+font-weight: 500;
+color: black;
+}
+.main{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.main div h1{
+    font-size: 34px;
+    font-weight: bold;
+  
+}
+a{
+    text-decoration: none;
+}
+
+.shops{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+.service{
+    display: flex;
+    justify-content: space-around;
+    gap: 0px;
+    margin-top: 50px;
+}
+.service h1{
+    font-size: 30px;
+    background-color: greenyellow;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+.small-card{
+    display: flex;
+    border: 2px solid;
+    margin-top: 20px;
+    border-radius: 30px;
+    padding: 8px;
+  
+}
+.box{
+/* border: 2px solid ; */
+margin-top: 40px;
+
+
+
+
+}
+.card1{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+   
+}
+.small-card a{
+   position: relative;
+   top: 25px;
+   font-size: x-small;
+    text-decoration: none;
+    color: black;
+}
+.small-card h1{
+    font-size: 30px;
+    font-weight: bold;
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 10px;
+}
+.sec2 h1{
+font-size: 30px;
+font-weight: bold;
+background-color: greenyellow;
+border-radius: 20px;
+padding: 5px;
+}
+.sec2{
+   display: flex;
+   gap: 30px;
+   margin-top: 50px;
+  /* margin-left: 200px; */
+  justify-content: center;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 30px;
+   
+  
+  
+}
+.paper{
+    border: 2px solid;
+    border-radius: 30px;
+    padding: 1px;
+    flex: 1;
+    height: 50%;
+  
+}
+.paper label{
+    display: flex;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.paper input{
+    display: none;
+}
+.paper .fries{
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 10px;
+    background: none;
+    transition: .2s;
+}
+.paper input:checked~label img {
+    display: none;
+}
+.paper input:checked~.fries{
+    max-height: 100px;
+    padding: 10px;
+}
+.paper input:checked~.fries1{
+    display: none;
+    max-height: 100px;
+    padding: 30px;
+}
+.paper input:checked~label {
+    background: url('./mini hackathon_files/Plus icon.png') no-repeat right;
+    
+}
+.hero input:checked~label {
+    background: url('./mini hackathon_files/Plus icon.png') no-repeat right;
+    
+ 
+
+}
+.paper label img{
+  margin-left: 945px;
+  
+}
+.paper img{
+    float: right;
+}
+.paper h1{
+    font-size: 25px;
+    font-weight: bold;
+}
+.sec3{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.sec3 h1{
+font-size: 30px;
+background-color: greenyellow;
+font-weight: bold;
+border-radius: 20px;
+padding: 8px;
+
+}
+.form{
+    width: 500px;
+}
+
+
+/* Media query starts here */
+
+@media screen and (max-width: 790px){
+    .header{
+        display: none;
+    }
+    nav.figma{
+        display: flex;
+    }
+   
+
+}
+@media screen and (max-width: 1000px) {
+    .header img{
+        max-width: 100%;
+    }
+    .main img{
+        max-width: 80%;
+    }
+    /* .main .main2 h1{
+        font-size: 20px;
+    }
+    .main .main2 p{
+        font-size: 10px;
+    }
+    .main .main2 button{
+        font-size: 12px;
+    } */
+    .shops img{
+        max-width: 100%;
+       
+    }
+    .service h1{
+        font-size: large;
+    }
+    .paper{
+        flex: 0 0 100%
+    }
+    .paper label img{
+        margin-left: 200px;
+    }
+
+}
+@media screen and (max-width: 460px){
+    .paper{
+        max-width: 100%;
+      
+    }
+    .paper p{
+        font-size: small;
+    }
+    .paper h1{
+        font-size: large;
+        
+    }
+    /* .main .main2 h1{
+        font-size: 20px;
+        padding: 0px 4px;
+
+    }
+    .main .main2 p{
+        font-size: 12px;
+        padding: 0px 4px;
+    } */
+    .shops img{
+        max-width: 200%;
+    }
+    .service h1{
+        font-size: small;
+    }
+    .service div p{
+        font-size: 10px;
+    }
+    .shops{
+        margin-top: 35px;
+    }
+    /* .main .main2 button{
+        font-size: 7px;
+    } */
+    .small-card h1{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .small-card a{
+        position: relative;
+        top: 64px;
+    }
+    .sec3 h1{
+        font-size: large;
+    }
+    .paper label img{
+        margin-left: 120px;
+    }
+
+}
+@media screen and (max-width: 407px){
+    .case{
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 350px){
+    /* .main .main2 h1{
+        font-size: 12px;
+    }
+    .main .main2 p{
+        font-size: 6px;
+    } */
+    .shops img{
+        max-width: 600%;
+       
+    }
+    /* .main .main2 button{
+        font-size: 6px;
+    } */
+    .small-card a{
+        position: relative;
+        top: 48px;
+    }
+}
+@media screen and (max-width: 620px){
+    .service h1{
+        font-size: 16px;
+    }
+    .service div p{
+        font-size: 13px;
+    }
+    .service{
+        gap: 30px;
+    }
+    .service p{
+        font-size: medium;
+    }
+}
